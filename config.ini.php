@@ -61,7 +61,7 @@ max_filesize = 20
 type = "SQLiteCache"
 host = ""
 port = 0
-timeout = 86400
+timeout = 5000
 
 
 [admin]
