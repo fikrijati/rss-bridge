@@ -58,11 +58,14 @@ retries = 1
 max_filesize = 20
 
 [cache]
-; Gunakan SQLite cache karena Vercel serverless tidak mendukung file system permanent
-type = "SQLiteCache"
-host = ""
-port = 0
-timeout = 3600   ; 1 jam cache
+
+; Cache type: file, sqlite, memcached, array, null
+type = "file"
+
+; Allow users to specify custom timeout for specific requests.
+; true  = enabled
+; false = disabled (default)
+custom_timeout = true
 
 [admin]
 
