@@ -58,11 +58,11 @@ retries = 1
 max_filesize = 20
 
 [cache]
+; Gunakan SQLite cache karena Vercel serverless tidak mendukung file system permanent
 type = "SQLiteCache"
 host = ""
 port = 0
-timeout = 5000
-
+timeout = 3600   ; 1 jam cache
 
 [admin]
 
