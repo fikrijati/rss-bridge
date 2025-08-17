@@ -58,14 +58,11 @@ retries = 1
 max_filesize = 20
 
 [cache]
+type = "SQLiteCache"
+host = ""
+port = 0
+timeout = 86400
 
-; Cache type: file, sqlite, memcached, array, null
-type = "file"
-
-; Allow users to specify custom timeout for specific requests.
-; true  = enabled
-; false = disabled (default)
-custom_timeout = false
 
 [admin]
 
